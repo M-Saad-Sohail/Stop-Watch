@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================================== BACKGROUND EFFECT ================================================ -->
+
+    <div class="wrapper">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- ============================================== BACKGROUND BLOB ================================================ -->
+
+    <div
+        class="sm:h-48 md:w-60 md:h-60 lg:w-80 lg:h-80 bg-[#A427DF] absolute top-0 -left-5 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full bg">
+    </div>
+    <div
+        class="sm:h-48 md:w-60 md:h-60 lg:w-80 lg:h-80 bg-[#ff7d3b] absolute bottom-10  right-0 -z-10 blur-2xl opacity-30 overflow-hidden rounded-full bg">
+    </div>
+
+
+    <!-- ============================================== STOP WATCH  ================================================ -->
+    
+    <div class="text-4xl sm:text-4xl md:text-5xl md:text-6xl lg:7xl flex justify-center items-center text-[#ff7d3b]">
+        Digital Stopwatch
+    </div>
+
+
+
+    <div class="flex justify-center md:w-3/4 lg:w-1/2 mx-auto mt-6 bg-yellow-200 md:rounded-2xl">
+        <div class="flex justify-center items-center w-64 h-36 md:h-64">
+            <span id="dummyHr" class="text-4xl md:text-5xl">0</span><span id="digitalHr"
+            class="text-4xl md:text-5xl">0</span>
+        </div>
+        <div class="flex justify-center items-center">
+            <span class="text-4xl md:text-5xl">:</span>
+        </div>
+        <div class="flex justify-center items-center w-64 h-36 md:h-64">
+            <span id="dummyMin" class="text-4xl md:text-5xl">0</span><span id="digitalMin"
+                class="text-4xl md:text-5xl">0</span>
+            </div>
+            <div class="flex justify-center items-center">
+                <span class="text-4xl md:text-5xl">:</span>
+            </div>
+            <div class="flex justify-center items-center w-64 h-36 md:h-64">
+                <span id="dummySec" class="text-4xl md:text-5xl">0</span><span id="digitalSec"
+                class="text-4xl md:text-5xl">0</span>
+            </div>
+            <div class="flex justify-center items-center">
+                <span class="text-4xl md:text-5xl">:</span>
+        </div>
+        <div class="flex justify-center items-center w-64 h-36 md:h-64">
+            <span class="text-4xl md:text-5xl">0</span><span id="digitalMilliSec" class="text-4xl md:text-5xl">0</span>
+        </div>
+    </div>
+    
+    <div class="flex justify-center items-center space-x-6 mt-6 p-6">
+        <button onclick="start()" id="startBtn"
+        class="rounded-xl px-4 py-2 text-white bg-[#ff7d3b] border-2 border-[#ff7d3b] hover:border-2 hover:border-[#ff7d3b] hover:bg-[#01051e] hover:text-[#ff7d3b] hover:ease-in hover:duration-200 ">Start</button>
+        <button onclick="stop(),stopMySong()" id="stopBtn"
+        class="rounded-xl px-4 py-2 text-white bg-[#ff7d3b] border-2 border-[#ff7d3b] hover:border-2 hover:border-[#ff7d3b] hover:bg-[#01051e] hover:text-[#ff7d3b] hover:ease-in hover:duration-200 ">Stop</button>
+        <button onclick="reset(),stopMySong()"
+        class="rounded-xl px-4 py-2 text-white bg-[#ff7d3b] border-2 border-[#ff7d3b] hover:border-2 hover:border-[#ff7d3b] hover:bg-[#01051e] hover:text-[#ff7d3b] hover:ease-in hover:duration-200 ">Reset</button>
+    </div>
+    
+
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
